@@ -8,10 +8,6 @@ const TableRow = (props) => {
         props.handleDelete(data._id);
     }
 
-    const handleEdit = () => {
-        // TODO: open popup
-    }
-
     const humanizeDate = () => {
         const date = new Date(parseInt(data.date));
         return date.toLocaleDateString();
@@ -28,7 +24,6 @@ const TableRow = (props) => {
             <td>{data.visits}</td>
             <td>
                 <div className="d-flex justify-content-evenly">
-                    <button className="btn btn-warning">Edit</button>
                     <button className="btn btn-danger ml-2" onClick={handleDelete}>Delete</button>
                 </div>
             </td>

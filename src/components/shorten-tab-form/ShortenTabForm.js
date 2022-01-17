@@ -4,7 +4,7 @@ import { postShortenUrl } from './Url.service';
 import classes from './ShortenTabForm.module.css';
 
 const ShortenTabForm = (props) => {
-    const [ url, setUrl ] = useState("http://example.com");
+    const [ url, setUrl ] = useState("");
     const [ shortenedUrl, setShortenedUrl ] = useState("");
 
     const handleShortenUrl = (event) => {
